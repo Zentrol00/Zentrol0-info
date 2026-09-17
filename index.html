@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="lang-switcher">
+  <button class="lang-btn active" data-lang="ru">RU</button>
+  <button class="lang-btn" data-lang="en">EN</button>
+</div>
+<div id="enterScreen" class="enter-screen">
+  <div class="enter-box">
+    <img src="avatar2.jpg" alt="Аватар" class="enter-avatar">
+    <h2 class="enter-nickname" data-i18="nickname">Click down here to see my info</h2>
+    <button id="enterBtn" class="enter-btn">Enter</button>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="card">
+    <div class="header">
+      <img src="avatar2.jpg" alt="Аватар" class="avatar">
+      <h1 class="nickname" data-i18="nickname">Neticx \ Тропический дождь</h1>
+    </div>
+  </div>
+
+  <div class="btn-wrap">
+    <button class="info-btn" id="infoBtn" data-i18="infoBtn">InFoRmAtIoN</button>
+    <div class="info-popup" id="infoPopup">
+      <p id="bioText"></p>
+    </div>
+  </div>
+
+ <div class="socials">
+  <a href="https://steamcommunity.com/id/32234610572012/" target="_blank" class="social-btn">Steam</a>
+  <a href="https://discord.com/users/993474850700148806" target="_blank" class="social-btn">Discord</a>
+  <a href="https://t.me/@apathy_rewil" target="_blank" class="social-btn">Telegram</a>
+  <a href="https://www.roblox.com/users/4898004079/profile" target="_blank" class="social-btn">Roblox</a>
+ </div>
+ 
+ <div class="music-player">
+  <div class="track-info">
+    <span id="trackName">Трек 1</span>
+  </div>
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+  <div class="music-controls">
+    <button id="prevBtn" class="music-btn small">⏮</button>
+    <button id="playBtn" class="music-btn">▶</button>
+    <button id="nextBtn" class="music-btn small">⏭</button>
+  </div>
+</div>
+
+<audio id="audioPlayer" src="track1.mp3"></audio>
+
+<script src="script.js"></script>
